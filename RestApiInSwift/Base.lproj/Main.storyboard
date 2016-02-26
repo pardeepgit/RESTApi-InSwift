@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RestApiInSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo7-0Q-Kpw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8f-nr-DBB">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GyF-NL-pcU">
+                                                <rect key="frame" x="175" y="150" width="250" height="35"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="2eV-65-Aas"/>
+                                                    <constraint firstAttribute="width" constant="250" id="sbh-de-hq1"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWQ-6e-IB5">
+                                                <rect key="frame" x="175" y="210" width="250" height="35"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="4uc-MG-nQ7"/>
+                                                    <constraint firstAttribute="height" constant="35" id="Hsk-AU-DKz"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi9-Eg-PEN">
+                                                <rect key="frame" x="175" y="285" width="250" height="40"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="F1R-je-pR8"/>
+                                                    <constraint firstAttribute="height" constant="40" id="tNv-dB-7lj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vlo-Ie-8RO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Bi9-Eg-PEN" firstAttribute="leading" secondItem="c8f-nr-DBB" secondAttribute="leading" constant="175" id="1FI-7I-lbY">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="75"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                            </constraint>
+                                            <constraint firstItem="GyF-NL-pcU" firstAttribute="top" secondItem="c8f-nr-DBB" secondAttribute="top" constant="150" id="1tV-U5-ISc"/>
+                                            <constraint firstAttribute="trailing" secondItem="GyF-NL-pcU" secondAttribute="trailing" constant="175" id="Ke2-sk-5zx">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="275"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                            </constraint>
+                                            <constraint firstItem="AWQ-6e-IB5" firstAttribute="top" secondItem="GyF-NL-pcU" secondAttribute="bottom" constant="25" id="cV2-HG-YCC"/>
+                                            <constraint firstItem="AWQ-6e-IB5" firstAttribute="leading" secondItem="c8f-nr-DBB" secondAttribute="leading" constant="175" id="fEz-NM-wXt">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="75"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                            </constraint>
+                                            <constraint firstItem="Bi9-Eg-PEN" firstAttribute="top" secondItem="AWQ-6e-IB5" secondAttribute="bottom" constant="40" id="glh-0O-cHs"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bi9-Eg-PEN" secondAttribute="trailing" constant="175" id="hda-2j-crp">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="275"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                            </constraint>
+                                            <constraint firstItem="GyF-NL-pcU" firstAttribute="leading" secondItem="c8f-nr-DBB" secondAttribute="leading" constant="175" id="hyI-e8-QIn">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="75"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                            </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="AWQ-6e-IB5" secondAttribute="trailing" constant="175" id="iD0-dF-HPm">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="275"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="c8f-nr-DBB" firstAttribute="leading" secondItem="Bo7-0Q-Kpw" secondAttribute="leading" id="FdD-fc-Bda"/>
+                                    <constraint firstItem="c8f-nr-DBB" firstAttribute="centerY" secondItem="Bo7-0Q-Kpw" secondAttribute="centerY" id="a3C-45-mvW"/>
+                                    <constraint firstAttribute="trailing" secondItem="c8f-nr-DBB" secondAttribute="trailing" id="o3x-Tb-Tmr"/>
+                                    <constraint firstItem="c8f-nr-DBB" firstAttribute="top" secondItem="Bo7-0Q-Kpw" secondAttribute="top" id="pvr-Ug-bd6"/>
+                                    <constraint firstAttribute="bottom" secondItem="c8f-nr-DBB" secondAttribute="bottom" id="qdA-P8-4xh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bo7-0Q-Kpw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2DI-RY-gJF"/>
+                            <constraint firstAttribute="trailing" secondItem="Bo7-0Q-Kpw" secondAttribute="trailing" id="eDs-4s-CSx"/>
+                            <constraint firstItem="Bo7-0Q-Kpw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kTH-nB-L6h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bo7-0Q-Kpw" secondAttribute="bottom" id="keu-0S-daR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="GyF-NL-pcU" id="MUB-mK-zcA"/>
+                        <outlet property="loginButton" destination="Bi9-Eg-PEN" id="gET-YW-Dyj"/>
+                        <outlet property="passwordTextField" destination="AWQ-6e-IB5" id="Q0s-d8-dZ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="227"/>
+        </scene>
+    </scenes>
+</document>
