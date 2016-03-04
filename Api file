@@ -1,0 +1,15 @@
+
+Url : 
+ http://forapp.com/api/getContacts.php
+
+
+Request Json:
+
+{"data":[{"name":"Kate Bell","phone":"5555648583"},{"name":"Kate Bell","phone":"4155553695"},{"name":"Daniel Higgins","phone":"5554787672"},{"name":"Daniel Higgins","phone":"4085555270"},{"name":"Daniel Higgins","phone":"4085553514"},{"name":"John Appleseed","phone":"8885555512"},{"name":"John Appleseed","phone":"8885551212"},{"name":"Anna Haro","phone":"5555228243"},{"name":"Hank Zakroff","phone":"5557664823"},{"name":"Hank Zakroff","phone":"7075551854"},{"name":"David Taylor","phone":"5556106679"}]}
+
+
+
+Url Request: 
+
+http://forapp.com/api/getContacts.php?data=[{"name":"Kate Bell","phone":"5555648583"},{"name":"Kate Bell","phone":"4155553695"},{"name":"Daniel Higgins","phone":"5554787672"},{"name":"Daniel Higgins","phone":"4085555270"},{"name":"Daniel Higgins","phone":"4085553514"},{"name":"John Appleseed","phone":"8885555512"},{"name":"John Appleseed","phone":"8885551212"},{"name":"Anna Haro","phone":"5555228243"},{"name":"Hank Zakroff","phone":"5557664823"},{"name":"Hank Zakroff","phone":"7075551854"},{"name":"David Taylor","phone":"5556106679"}]
+
